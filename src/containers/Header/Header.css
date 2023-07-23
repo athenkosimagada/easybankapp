@@ -1,0 +1,136 @@
+.hero {
+    position: relative;
+    display: flex;
+    background: var(--color-light);
+    padding: 0 9rem;
+    align-items: center;
+    height: 47em;
+}
+
+
+.hero_content {
+    width: 50%;
+}
+
+.hero_content h1, p {
+    color: var(--color-dark);
+}
+
+.hero_content h1 {
+    font-size: 40px;
+}
+
+.hero_content p {
+    margin: 2rem 0;
+    width: 85%;
+}
+
+.hero_images {
+    position: relative;
+}
+
+.hero_images .desktop {
+    position: absolute;
+    top: -35.2em;
+    z-index: 0;
+}
+
+.hero_images .phone {
+    position: absolute;
+    top: -26.7em;
+    right: -55em;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1280px) {
+    .hero {
+        padding-inline: 5rem;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .hero {
+        padding-inline: 4rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .hero {
+        flex-direction: column;
+        padding-inline: 2.5rem;
+        padding-bottom: 6rem;
+        height: fit-content;
+    }
+
+    .hero_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+        width: 100%;
+
+        margin-top: -16rem;
+    }
+
+    .hero_content p {
+        margin: 1.5rem 0;
+        text-align: center;
+
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .image_container {
+        order: 1;
+    }
+    
+    .hero_images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero_images .desktop {
+        top: -40%;
+        right: -19em;
+        width: 150%;
+        height: 100%;
+    }
+
+    .hero_images .phone {
+        position: relative;
+        width: 80%;
+        height: 100%;
+        top: -17em;
+        right: 0em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hero_content {
+        margin-top: 0;
+    }
+
+    .hero_content h1 {
+        font-size: 30px;
+    }
+    
+    .hero_content p {
+        margin: 1.3rem 0;
+
+        padding-inline: 0.8rem;
+        font-size: 13px;
+    }
+
+    .hero_images .desktop {
+        top: -20%;
+        right: -9em;
+        height: 120%;
+    }
+
+    .hero_images .phone {
+        width: 100%;
+        top: -3em;
+    }
+}

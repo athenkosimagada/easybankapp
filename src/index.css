@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-family: 'Open Sans', sans-serif;
+  
+  --color-green: linear-gradient(to right,#32D169 0%,#2AB9D3 100%) ;
+  --color-black: #0C0C0C;
+  --color-dark: #2D314E;
+  --color-light: #FAFAFA;
+  --color-lightgrey: #F4F5F7;
+  --color-white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: var( --font-family);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-lightgrey);
+}
